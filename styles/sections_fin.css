@@ -1,0 +1,174 @@
+.black {
+    padding: 7em 3em 2em 3em;
+    background-color: black;
+    height: 350px;
+    overflow: hidden;
+}
+
+.but2 {
+    top: 20%;
+    right: 15%;
+}
+.review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.clisay {
+    height: 24em;
+    width: 28em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+}
+
+.cli2x {
+    padding: 1em;
+    height: 65px;
+    width: 65px;
+}
+.art {
+    font-family: 'Zen Maru Gothic';
+    padding: 0.5em 1em 1em 0;
+    font-size: large;
+}
+.sock1 {
+    font-weight: 600;
+}
+
+.sock2 {
+    font-size: small;
+    letter-spacing: -0.5px;
+}
+
+.footy {
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+.fr1 {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    justify-content: center;
+    padding: 0 5em 5em 5em;
+}
+.maininfo {
+    color: white;
+}
+.maininfo > h3 {
+    font-weight: 400;
+    margin-bottom: 2em;
+    line-height: 2em;
+}
+.info {
+    margin-left: 10em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1em;
+    padding: 0 5em 0 5em;
+}
+.details {
+    color: white;
+}
+
+.bluer {
+    color: #2b8bac;
+}
+.fr2 {
+    color: white;
+    display: flex;
+    position: relative;
+}
+.floater {
+    position: absolute;
+}
+.flt1 {
+    left: 4%;
+}
+.flt3 {
+    right: 10%;
+}
+.flt2 {
+    left:50%;
+    transform: translateX(-90%);
+}
+.logo3 {
+    width: 36px;
+    height: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .csix {
+        grid-template-rows: 15% 85%;
+    }
+    .review {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr; 
+    }
+    .p6 {
+        height: 900px;
+    }
+    .fr1 {
+        display: block;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        padding: 0;
+        margin: 0%;
+        text-align: center;
+    }
+    .fr2 {
+        display: block;
+        text-align: center;
+        padding: 0;
+        /* margin: -3em 0 0 0; */
+    }
+    .flt2 {
+        transform: translateX(0%);
+    }
+    .floater{
+        inset: 0;
+        position: relative;
+    }
+    .info {
+        display: block;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+    .maininfo > h3 {
+        width: 20ch;
+        margin: 0 auto;
+    }
+    .b1 {
+        height: 625px;
+        padding: 3rem;
+        margin: 0;
+    }
+    .footy{
+        transform: translateX(-20%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .but2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .review {
+        row-gap: 1em;
+    }
+    .clisay {
+        height: 19em;
+        width: 22em;
+    }
+    .maininfo > h3 {
+        font-size: small;
+    }  
+    .p6 {
+        height: 1000px;
+    }
+}
