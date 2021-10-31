@@ -11,8 +11,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/icon" href="assets/images/Logo_1.svg" />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
     <link rel="stylesheet" type="text/css" href="styles/sections_main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/sections_sec.css" />
+    <link rel="stylesheet" type="text/css" href="styles/sections_fin.css" />
     <title>BNB</title>
   </head>
   <body onload="first()">
@@ -30,10 +33,18 @@
             <span class="material-icons-round bx">shopping_cart</span>
             <span class="eng">ENG</span> 
             <span class="spc">&emsp;&emsp;</span>  
-            <span class="material-icons-round app">apps</span>
+            <span class="material-icons-round app" onclick="apop()" id="opclose">apps</span>
         </span>
     </header>
-    <!-- <nav class="appopen"></nav> -->
+    <nav class="appopen" id="navig">
+        <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Behance</li>
+            <li>Dribbble</li>
+            <li>Email</li>
+        </ul>
+    </nav>
     <section class="s1">
         <div class="box a">Some Tech</div>
         <div class="box b">Company</div>
@@ -42,7 +53,7 @@
     </section>
 
 
-    <section class="s1 sx white">
+    <section class="s1 sx white large">
         <div class="index">
             <div class="num">01</div>
             <div class="line"></div>
@@ -54,73 +65,232 @@
                 <div class="para p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla incidunt dolores ab, eveniet voluptatibus dolorem cumque nemo commodi sint repellat.</div>
             </div>
             <div class="oneicon">
+                <div class="sectcon i1">
+                    <img src="assets/images/icon_1.svg" alt="icon1">
+                    <h3>Market Research</h3>
+                    <p class="iconp">Lorem ipsum is simply text the printing and typesetting standard industry.</p>
+                </div>
+                <div class="sectcon i2">
+                    <img src="assets/images/icon_2.svg" alt="icon2">
+                    <h3>Wireframe/Sketch</h3>
+                    <p class="iconp">Lorem ipsum is simply text the printing and typesetting standard industry.</p>
+
+                </div>
+                <div class="sectcon i3">
+                    <img src="assets/images/icon_3.svg" alt="icon3">
+                    <h3>Creative Design</h3>
+                    <p class="iconp">Lorem ipsum is simply text the printing and typesetting standard industry.</p>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <section class="s1 sx pink">
+    <section class="s1 sx pink pink1">
         <div class="index pinkind">
             <div class="num">02</div>
             <div class="line"></div>
             <img src="assets/images/Logo_2.svg" class="logo2" alt="logo_small">
         </div>
         <div class="content ctwo">
-            <div>Hello</div>
-            <div class="oneicon"></div>
+            <div class="inner col2">
+                <div class="para p1">Latest Projects</div>
+                <div class="para p2"><span>View All</span></div>
+            </div>
+            <div class="slider">
+                <div class="simg1">
+                    <img src="assets/images/Project_1.jpg" class="slid" alt="sliding_img" id="sq1">
+                    <div class="overlays1">
+                        <div class="imgtext">
+                            <p>Branding</p>
+                            <h3>Bits N Bytes</h3>
+                        </div>  
+                    </div>
+                </div>
+                <img src="assets/images/Project_2.jpg" class="slid simg2" alt="sliding_img" id="sq2">
+                <div class="button but1">
+                    <div class="tri left" onclick="left()"><span class="material-icons-round">arrow_left</span></div>
+                    <div class="tri right" onclick="right()"><span class="material-icons-round">arrow_right</span></div>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section class="s1 sx white">
+    <section class="s1 sx white w3">
         <div class="index">
             <div class="num">03</div>
             <div class="line"></div>
             <img src="assets/images/Logo_2.svg" class="logo2" alt="logo_small">
         </div>
-        <div class="content cone">
-            <div>Hello</div>
-            <div class="oneicon"></div>
+        <div class="content cthree">
+            <div class="inner col3">
+                <div class="para p1">Meet The Team<br>Our "So-Called" Proffesionals</div>
+                <div class="para p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla incidunt dolores ab, eveniet voluptatibus dolorem cumque nemo commodi sint repellat.</div>
+            </div>
+            <div class="faces">
+                <div class="face">
+                    <img src="assets/images/Team_3.jpg" class="faceq1" alt="face">
+                    <h3>Tech Guy with Hoodie</h3>
+                    <p>Web Developer</p>
+                    <h4>Fb&ensp;Tw&ensp;In</h4>
+                </div>
+                <div class="face">
+                    <img src="assets/images/Team_2.jpg" class="faceq2" alt="face">
+                    <h3>Smiling Lady</h3>
+                    <p>Founder</p>
+                    <h4>Fb&ensp;Tw&ensp;In</h4>
+                </div>
+                <div class="face">
+                    <img src="assets/images/Team_1.jpg" class="faceq3" alt="face">
+                    <h3>Serious Guy</h3>
+                    <p>Something in Our Company</p>
+                    <h4>Fb&ensp;Tw&ensp;In</h4>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section class="s1 sx pink">
+    <section class="s1 sx pink pink2">
         <div class="index pinkind">
             <div class="num">04</div>
             <div class="line"></div>
             <img src="assets/images/Logo_2.svg" class="logo2" alt="logo_small">
         </div>
-        <div class="content ctwo">
-            <div>Hello</div>
-            <div class="oneicon"></div>
+        <div class="content cfour">
+            <div class="inner col4">
+                <div class="para p1">Partners & clients</div>
+                <div class="para p2">We're constantly refining our product. Adding new features. Working to help your business grow.</div>
+            </div>
+                <div class="spon">
+                    <img src="assets/images/client_4.png" class="xc cl1" alt="clients">
+                    <img src="assets/images/client_2.png" class="xc cl2" alt="clients">
+                    <img src="assets/images/client_1.png" class="xc cl3" alt="clients">
+                    <img src="assets/images/client_6.png" class="xc cl4" alt="clients">
+                    <img src="assets/images/client_3.png" class="xc cl5" alt="clients">
+                    <img src="assets/images/client_5.png" class="xc cl6" alt="clients">
+                </div>
         </div>
     </section>
 
 
-    <section class="s1 sx white">
+    <section class="s1 sx white w5">
         <div class="index">
             <div class="num">05</div>
             <div class="line"></div>
             <img src="assets/images/Logo_2.svg" class="logo2" alt="logo_small">
         </div>
-        <div class="content cone">
-            <div>Hello</div>
-            <div class="oneicon"></div>
+        <div class="content cfive">
+            <div class="inner col5">
+                <div class="para p1">Recent News and Stories.</div>
+                <div class="para p2">Share your stories and news with everyone.</div>
+            </div>
+        <div class="news">
+            <div class="story str1">
+                <div class="read rd1">
+                    <img src="assets/images/Team_1_Copy_2.jpg" class="tx team1" alt="team">
+                    <span class="posted">Posted by Colabrio<div class="date">July 5,2019</div></span>
+                </div>
+                <div class="strat rat1">
+                    <p><span>Digital Strategy</span> 4min read</p>
+                    <h4>The Ultimate Guide to Make Your WordPress Journal</h4>
+                    <div class="readmore"><p id="qaws">Read More</p><span class="material-icons-round qarrow">east</span></div>
+                </div>
+            </div>
+            <div class="story str2">
+                <div class="read rd1">
+                    <img src="assets/images/Team_2_Copy_2.jpg" class="tx team1" alt="team">
+                    <span class="posted">Posted by Stormie<div class="date">July 5,2019</div></span>
+                </div>
+                <div class="strat rat2">
+                    <p><span>Personal</span> 4min read</p>
+                    <h4>The Highly Contemporary UI/UX Design from a london.</h4>
+                    <div class="readmore"><p id="qaws">Read More</p><span class="material-icons-round qarrow">east</span></div>
+                </div>
+            </div>
+            <div class="story str3">
+                <div class="read rd1">
+                    <img src="assets/images/Team_3_Copy_2.jpg" class="tx team1" alt="team">
+                    <span class="posted">Posted by Angela<div class="date">July 5,2019</div></span>
+                </div>
+                <div class="strat rat3">
+                    <p><span>Personal</span> 4min read</p>
+                    <h4>A Color Exercise for our Brand's Illustration</h4>
+                    <div class="readmore"><p id="qaws">Read More</p><span class="material-icons-round qarrow">east</span></div>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <section class="s1 sx pink">
+    <section class="s1 sx pink p6">
         <div class="index pinkind">
             <div class="num">06</div>
             <div class="line"></div>
             <img src="assets/images/Logo_2.svg" class="logo2" alt="logo_small">
         </div>
-        <div class="content ctwo">
-            <div>Hello</div>
-            <div class="oneicon"></div>
+        <div class="content csix">
+            <div class="inner col5 col6">
+                <div class="para p1">What our clients say</div>
+                <div class="para p2">Share your stories and news with everyone.</div>
+            </div>
+            <div class="button but2">
+                <div class="tri left"><span class="material-icons-round">arrow_left</span></div>
+                <div class="tri right"><span class="material-icons-round">arrow_right</span></div>
+            </div>
+            <div class="review">
+                <div class="clisay say1">
+                    <img src="assets/images/client_1@2x.jpg" class="cli2x ent1" alt="lady">
+                    <div class="ranman ran1">
+                        <article class="art cle1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe distinctio animi magnam nisi, ad quidem ab quas iusto at suscipit dolores deleniti modi ratione corrupti consequatur. Asperiores, itaque mollitia aperiam quae assumenda atque officia nesciunt? Eligendi asperiores laboriosam fugit, facere atque,</article>
+                        <span class="sock1">Paid Reviewer</span><br><span class="sock2">Creative Company</span>
+                    </div>
+                </div>
+                <div class="clisay say2">
+                    <img src="assets/images/client_2@2x.jpg" class="cli2x ent2" alt="man">
+                    <div class="ranman ran2">
+                        <article class="art cle2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi labore consequuntur perspiciatis delectus nulla quaerat, architecto fugiat vel provident ipsum est quidem maxime nobis? Perspiciatis iusto iure inventore, excepturi placeat voluptates quod omnis animi amet odit ex, consequuntur veniam nisi, neque facere eos id veritatis ipsum</article>
+                        <span class="sock1">Paid Reviewer</span><br><span class="sock2">Creative Company</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <footer class="s1 black b1">
+        <div class="footy">
+            <div class="footrow fr1">
+                <div class="maininfo">
+                    <img src="assets/images/Logo_1.svg" class="logo3" alt="bluelogo">
+                    <h3>Dont be shy, get in touch with us and create the world again!</h3>
+                    <h4>Fb&ensp;Tw&ensp;In&ensp;Be</h4>
+                </div>
+                <div class="info"> 
+                   <div class="details dt1">
+                    <p class="bluer">PHONE</p>
+                    <p>+1234567890</p>
+                   </div>
+                   <div class="details dt2">
+                    <p class="bluer">ENQUIRIES</p>
+                    <p>info@bnb.com</p>
+                   </div>
+                   <div class="details dt3">
+                    <p class="bluer">ADDRESS</p>
+                    <p>Alpha Street, Beta Locality<br>Gamma City Delta Country</p>
+                   </div>
+                   <div class="details dt4">
+                    <p class="bluer">WORK HOURS</p>
+                    <p>Weekdays: 09:00 - 18:00<br>Weekends: 11:00 - 17:00</p>
+                   </div>
+                </div>
+            </div>
+            <div class="footrow fr2">
+                <div class="floater flt1">© 2020, BNB.</div>
+                <div class="floater flt2">All right reserved.</div>
+                <div class="floater flt3">Made with ❤️ by DHRUVA IIITK</div>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
